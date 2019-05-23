@@ -43,7 +43,7 @@ jobs:
 
       - run: bash scripts/generate.sh > Dockerfile
 
-      - run: echo "RUN apt install -y  gfortran g++ liblapack-dev libopenmpi-dev"
+      - run: echo "RUN apt install -y  gfortran g++ liblapack-dev libopenmpi-dev" >> Dockerfile
 
       - run: docker login -u $DOCKER_USERNAME -p $DOCKER_PASSWORD
 
